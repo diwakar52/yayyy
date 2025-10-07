@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Opliphantu 🎉</title>
+  <style>
+    :root{
+      --pink:#ff77b0;
+      --light:#fff7fb;
+      --text:#3b2f3f;
+      --accent:#ff4da6;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,var(--light),#fff);color:var(--text)}
+    header{display:flex;align-items:center;gap:16px;padding:18px 24px;border-bottom:1px solid #ffe6f0;background:rgba(255,255,255,0.6)}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{width:64px;height:64px;border-radius:18px;object-fit:cover;box-shadow:0 6px 18px rgba(255,77,166,0.12)}
+    nav a{margin-right:12px;text-decoration:none;color:var(--accent);font-weight:600}
+    main{padding:32px;max-width:980px;margin:24px auto}
+
+    /* page sections (act like multipage with hash URLs) */
+    section{display:none;padding:28px;background:rgba(255,255,255,0.9);border-radius:14px;box-shadow:0 10px 30px rgba(122,0,90,0.06)}
+    section.active{display:block}
+
+    .welcome{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+    .welcome h1{font-size:36px;margin:0;color:var(--accent);letter-spacing:1px}
+    .welcome p{margin:0;font-weight:600}
+    .ele{width:200px}
+
+    .big-msg{font-size:22px;padding:14px;border-radius:12px;background:linear-gradient(90deg,#fff0f6,#fff0fb);box-shadow:inset 0 1px 0 rgba(255,255,255,0.7)}
+
+    .btn{display:inline-block;padding:10px 18px;border-radius:12px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+
+    .special-list{margin-top:14px}
+    .special-list li{margin:8px 0;padding:10px;border-radius:10px;background:#fff6fb}
+
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+    .gallery-grid img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+
+    footer{margin-top:22px;padding:12px;text-align:center;color:#8a6b7e}
+
+    /* small confetti */
+    .confetti{pointer-events:none;position:fixed;left:0;right:0;top:0;bottom:0;z-index:9999;overflow:hidden}
+    .confetti i{position:absolute;display:block;width:12px;height:18px;opacity:0;transform:translateY(-100px) rotate(0deg);}
+
+    /* responsive */
+    @media (max-width:600px){
+      .logo img{width:48px;height:48px}
+      .welcome h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- Put your elephant image in images/elephant.png -->
+      <img src="https://media1.tenor.com/m/mrlo-lXPwkUAAAAC/dumbo-party.gif" alt="Opliphantu mascot" />
+      <div>
+        <div style="font-weight:800;font-size:18px">Happy Birthday — Opliphantu</div>
+        <div style="font-size:12px;color:#a86496"> + 1005 days</div>
+      </div>
+    </div>
+    <nav style="margin-left:auto">
+      <a href="#welcome">Welcome</a>
+      <a href="#message">Message</a>
+      <a href="#special">Why special</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#closing">Blessings</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- WELCOME PAGE -->
+    <section id="welcome" class="active">
+      <div class="welcome">
+        <!-- Add the bubu dudu GIF URL below (replace the placeholder) -->
+         <!-- <img src="https://media.giphy.com/media/3oEjHCWdU7F4a7b2Qo/giphy.gif" alt="Happy Birthday GIF"> -->
+
+        <img src="https://media.tenor.com/jDdAgHEf8WIAAAAm/bubu-dudu-love.webp" alt="bubu dudu" style="width:320px;max-width:86%;border-radius:16px;"/>
+
+        <img src="https://media.tenor.com/KaTDbDxg8n0AAAAm/tkthao219-bubududu.webp" class="ele" alt="elephant" />
+        <h1>H A P P Y &nbsp; B I R T H D A Y , &nbsp; O P L I P H A N T U 🎉</h1>
+        <p class="big-msg">Happy birthdayyyy and <strong>1005 days</strong> — celebrate the big boy! 🐘</p>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+          <a class="btn" id="play-music">Play Ek Mota Haathi (YouTube)</a>
+          <a class="btn" href="#message">Open My Message</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MESSAGE PAGE -->
+    <section id="message">
+      <h2 style="color:var(--accent)">My message ❤️</h2>
+      <p style="font-size:18px;font-weight:700">happy bdayyyyyyy oliphantuuuuu + happyyyyy 1005 dayssssss .......happiessesttt bdayyyyyyyyyyy ....u are a big boy now ......</p>
+      <p style="font-size:16px">Bhagwan ji opliphntuuuu ko happyyy rkhe healhyyy rakhe or successfullll nd happy rakheeeeeeeeeee .......muaaaahhhhhhhhhhhhhhhhhhhhhhh</p>
+
+      <div style="margin-top:18px;">
+        <a class="btn" href="#special">Why Opliphantu is special</a>
+      </div>
+    </section>
+
+    <!-- SPECIAL PAGE -->
+    <section id="special">
+      <h2 style="color:var(--accent)">Why Opliphantu is special 💖</h2>
+      <ul class="special-list">
+        <li>1. He is Opliphantuuuu — haha 🐘</li>
+        <li>2. He is dudu — hahah 🤭</li>
+        <li>3. He is 6 feet — tall & proud 😎</li>
+        <li>4. He loves me — muahh 😘</li>
+        <li>5. He is so sweetttt 🍬</li>
+        <li>6. He fights with me — katti mujhe kuc yaad gya main ni bolri ab 😂</li>
+      </ul>
+
+      <div style="margin-top:18px">
+        <button class="btn" onclick="startConfetti()">Celebrate 🎊</button>
+      </div>
+    </section>
+
+    <!-- GALLERY PAGE -->
+    <section id="gallery">
+      <h2 style="color:var(--accent)">Memories 🖼️</h2>
+      <div class="gallery-grid">
+        <!-- Use the single photo you provided -->
+        <img src="https://media.tenor.com/iFY4FD6rdUQAAAAm/bubu-dudu-sseeyall.webp" alt="Opliphantu + you" />
+        <img src="https://media.tenor.com/qJ41A361SuUAAAAm/tkthao219-bubududu.webp" alt="Opliphantu + you" />
+        <img src="https://media1.tenor.com/m/xFZDfWgNZ7MAAAAC/milk-and-mocha-milk-mocha.gif" alt="Opliphantu + you" />
+        <img src="https://media1.tenor.com/m/jS_Q9pR3QlAAAAAC/hug.gif" alt="Opliphantu + you" />
+        <img src="https://media.tenor.com/aMOxt0o16TQAAAAi/bubu-bubu-dudu.gif" alt="Opliphantu + you" />
+        <img src="https://media.tenor.com/tnTcMaEkXzAAAAAi/tonibear-bubu.gif" alt="Opliphantu + you" />
+        <img src="https://media.tenor.com/2HoRiixfMroAAAAi/lau-n%C6%B0%E1%BB%9Bc-m%E1%BA%AFt.gif" alt="Opliphantu + you" />
+        <img src="https://media.tenor.com/F9Q3thp6tzUAAAAi/bubu-bubu-dudu.gif" />
+      </div>
+
+      <!-- <p style="margin-top:12px;font-size:14px;color:#8a6b7e">Tip: If you want more images, put them in the images/ folder and add &lt;img&gt; tags here.</p> -->
+    </section>
+
+    <!-- CLOSING PAGE -->
+    <section id="closing">
+      <h2 style="color:var(--accent)">For youuuuu💫</h2>
+      <p style="font-size:16px">May Bhagwan keep Opliphantu healthy, successful and happy. Love you loads — muaaah! . Ese bhut sari akal dedoooooo bhut sari .</p>
+      <p>ye parents ko bhut zada happy rakheee and happy rkheee or iski life me sabkuch bhut acha acha hojaeee</p>
+      <p>essee healthy kro nazurk kali ko or gussa door krooo akal fill krdooooo</p>
+      <p>or go to kalka jiiiii okieeeeeeeeeeem</p>
+      <p>ab u are big boyyyy tsns ni leni sab shi hogaaa</p>
+      <p>work on yourself and sab mehnt krooooor sab kuch thik thik krdooooooooooooooooooooooooooo
+
+      </p>
+
+      okieeeeeee???????
+      <p>muahhhhhhhhhhhhhhhhhhhmuahhhhhhhhhhhhhhhhhhhmuahhhhhhhmuahhhhhhhhhhhhhhhhmuahhhhhhhhhhhhhhhhhhh</p>
+      
+
+      <div style="margin-top:14px">
+        <a class="btn" href="#welcome">Back to top</a>
+      </div>
+    </section>
+
+    
+
+    <footer>
+      Made with ❤️ by Aastha — Surprise for Opliphantu
+    </footer>
+  </main>
+
+  <!-- tiny confetti implementation -->
+  <div class="confetti" id="confetti"></div>
+
+  <!-- Hidden YouTube iframe container (used to try autoplay) -->
+  <div id="playerContainer" style="display:none"></div>
+
+  <script>
+    // --- navigation by hash to simulate multipage ---
+    function showSectionFromHash(){
+      const hash = location.hash || '#welcome';
+      document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+      const target = document.querySelector(hash);
+      if(target) target.classList.add('active');
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    window.addEventListener('hashchange',showSectionFromHash);
+    showSectionFromHash();
+
+    // --- confetti ---
+    function startConfetti(){
+      const container = document.getElementById('confetti');
+      container.innerHTML='';
+      const colors = ['#ff7ab6','#ffd6ea','#ffb3d1','#ffeedf','#ffd1e6'];
+      for(let i=0;i<90;i++){
+        const el = document.createElement('i');
+        el.style.left = Math.random()*100 + '%';
+        el.style.top = (Math.random()*10 - 10) + 'px';
+        el.style.background = colors[Math.floor(Math.random()*colors.length)];
+        el.style.opacity = 1;
+        el.style.transform = 'rotate('+ (Math.random()*360) +'deg)';
+        el.style.width = (6+Math.random()*12) + 'px';
+        el.style.height = (8+Math.random()*14) + 'px';
+        container.appendChild(el);
+        // animate
+        (function(el){
+          const endY = window.innerHeight + 200 + Math.random()*200;
+          const duration = 2500 + Math.random()*2200;
+          el.animate([
+            {transform:el.style.transform,opacity:1,top:el.style.top},
+            {transform:'translateY('+endY+'px) rotate('+ (Math.random()*720) +'deg)',opacity:0.9}
+          ],{duration:duration,iterations:1,easing:'cubic-bezier(.2,.6,.2,1)'});
+          setTimeout(()=>el.remove(),duration+50);
+        })(el)
+      }
+    }
+
+    // --- play YouTube music (best-effort, browsers often block autoplay with sound) ---
+    document.getElementById('play-music').addEventListener('click',function(){
+      // Replace the VIDEO_ID with the YouTube ID for "Ek Mota Haathi" if you have it.
+      const VIDEO_ID = 'REPLACE_WITH_YOUTUBE_VIDEO_ID';
+      const container = document.getElementById('playerContainer');
+      container.innerHTML = '<iframe width="0" height="0" src="https://www.youtube.com/embed/'+VIDEO_ID+'?autoplay=1&rel=0&controls=0&loop=1&playlist='+VIDEO_ID+'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+      // Also try to unmute and play if possible (modern browsers may still require user gesture — clicking the button counts)
+      alert('Trying to play the music. If it doesn\'t auto-play, open the YouTube link that appears.');
+      window.open('https://www.youtube.com/watch?v='+VIDEO_ID,'_blank');
+    });
+
+    // --- small accessibility: when user clicks any link, show corresponding section ---
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const h = a.getAttribute('href');
+        if(h.startsWith('#')){
+          setTimeout(()=>{showSectionFromHash()},50);
+        }
+      })
+    })
+
+    // --- helpful note: replace placeholders ---
+    console.log('IMPORTANT: Replace these placeholders:' );
+    console.log(' - images/elephant.png  -> put your elephant mascot there');
+    console.log(' - images/photo.jpg     -> put the attached photo there');
+    console.log(' - REPLACE_WITH_BUBU_DUDU_GIF_URL -> paste a bubu dudu GIF URL (or local gif in images/)');
+    console.log(' - REPLACE_WITH_YOUTUBE_VIDEO_ID -> paste the YouTube video id for Ek Mota Haathi');
+
+  </script>
+</body>
+</html>
